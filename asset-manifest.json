@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/BetterMovies/static/css/main.40f6d546.css",
-    "main.js": "/BetterMovies/static/js/main.dfbfaa87.js",
+    "main.css": "/BetterMovies/static/css/main.40601ea3.css",
+    "main.js": "/BetterMovies/static/js/main.5c65f4f1.js",
     "index.html": "/BetterMovies/index.html",
-    "main.40f6d546.css.map": "/BetterMovies/static/css/main.40f6d546.css.map",
-    "main.dfbfaa87.js.map": "/BetterMovies/static/js/main.dfbfaa87.js.map"
+    "main.40601ea3.css.map": "/BetterMovies/static/css/main.40601ea3.css.map",
+    "main.5c65f4f1.js.map": "/BetterMovies/static/js/main.5c65f4f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.40f6d546.css",
-    "static/js/main.dfbfaa87.js"
+    "static/css/main.40601ea3.css",
+    "static/js/main.5c65f4f1.js"
   ]
 }
