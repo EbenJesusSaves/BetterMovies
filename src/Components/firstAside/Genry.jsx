@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Genry";
-import './genries.css'
+import "./genries.css";
 const Genry = ({ dataReturned, returnMovies, setGenry, pagination }) => {
   let genry = [
     "Action",
@@ -30,12 +30,12 @@ const Genry = ({ dataReturned, returnMovies, setGenry, pagination }) => {
   ];
 
   return (
-    <div  className="genreMain">
+    <div className="genreMain">
       <style jsx>
         {`
           .fill:checked + label {
             border-right: 10px solid #a42618;
-            color: #ffff;
+            color: red;
           }
           .form-check {
             padding-left: 0;
@@ -49,7 +49,7 @@ const Genry = ({ dataReturned, returnMovies, setGenry, pagination }) => {
             border-color: #a42618;
           }
           .genryBtn {
-            borderrad: #a42618;
+            border-radius: #a42618;
             color: #d5d7dc;
             text-align: start;
             font-family: "Roboto", sans-serif;

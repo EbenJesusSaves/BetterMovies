@@ -10,7 +10,8 @@ export const Navbar = ({
   setGenry,
 }) => {
   const valueRef = useRef(null);
-  function changeSate() {
+  function changeSate(e) {
+    e.preventDefault();
     setSearchMovie(valueRef.current.value);
   }
 
@@ -65,7 +66,7 @@ export const Navbar = ({
                 <Link
                   class="nav-link active text-white"
                   aria-current="page"
-                  to='/'
+                  to="/"
                 >
                   Home
                 </Link>

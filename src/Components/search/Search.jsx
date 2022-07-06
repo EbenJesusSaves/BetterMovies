@@ -9,6 +9,7 @@ import Upcoming from "../lastAside/Upcoming";
 const Search = ({ setSearchMovie, setPagination, displayPage }) => {
   const valueRef = useRef(null);
   function changeSate() {
+    valueRef.preventDefault()
     setSearchMovie(valueRef.current.value);
   }
 
