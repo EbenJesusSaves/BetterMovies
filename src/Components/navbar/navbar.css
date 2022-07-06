@@ -9,9 +9,13 @@
   display: none;
   
 }
-
-
-
+.navbar-toggler,.navbar-toggler-icon{
+  background-color: brown;
+  color: aliceblue;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
 
 @media screen and (max-width: 600px) {
     .genre-in-nav {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Navbar } from "../navbar/Navbar";
 import "./downloadmovies.css";
+
 const DownloadMovies = () => {
   let { id } = useParams();
 
@@ -23,10 +24,7 @@ const DownloadMovies = () => {
   if (id) {
     return (
       <div>
-        <Navbar 
-        
-        
-        />
+        <Navbar />
         <div className="container-xxl cards-container d-flex  justify-content-center">
           <div className="downloadMovie mb-3 hello">
             <div className="backgroundImage ">
@@ -85,7 +83,6 @@ const DownloadMovies = () => {
                 </div>
               </div>
             </div>
-          
             <div className="preview">
               {" "}
               <div className="trailers ">

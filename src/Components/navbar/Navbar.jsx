@@ -65,6 +65,9 @@ export const Navbar = ({
               <li class="nav-item">
                 <Link
                   class="nav-link active text-white"
+                  onClick={() => {
+                    setSearchMovie("");
+                  }}
                   aria-current="page"
                   to="/"
                 >
@@ -72,9 +75,14 @@ export const Navbar = ({
                 </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">
-                  Link
-                </a>
+                <div
+                  class="nav-link text-white cursor-pointer"
+                  onClick={() => {
+                    setGenry("");
+                  }}
+                >
+                  Clear Genres
+                </div>
               </li>
             </ul>
             <form class="d-flex">
@@ -83,8 +91,9 @@ export const Navbar = ({
                 class="form-control me-2"
                 type="search"
                 placeholder="Search"
-                onChange={() => {
+                onChange={(e) => {
                   setPagination(1);
+                  setSearchMovie(e.value);
 
                   //kkkkkkkkkkkkkkkkkk
                 }}
