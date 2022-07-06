@@ -13,6 +13,7 @@ export const Navbar = ({
   function changeSate(e) {
     e.preventDefault();
     setSearchMovie(valueRef.current.value);
+    valueRef.current.value = "";
   }
 
   let genryFrom = [
@@ -93,7 +94,6 @@ export const Navbar = ({
                 placeholder="Search"
                 onChange={(e) => {
                   setPagination(1);
-                  setSearchMovie(e.value);
 
                   //kkkkkkkkkkkkkkkkkk
                 }}
