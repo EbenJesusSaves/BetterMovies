@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BetterMovies/static/css/main.40f6d546.css",
+    "main.js": "/BetterMovies/static/js/main.dfbfaa87.js",
+    "index.html": "/BetterMovies/index.html",
+    "main.40f6d546.css.map": "/BetterMovies/static/css/main.40f6d546.css.map",
+    "main.dfbfaa87.js.map": "/BetterMovies/static/js/main.dfbfaa87.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40f6d546.css",
+    "static/js/main.dfbfaa87.js"
+  ]
+}
