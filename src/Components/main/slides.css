@@ -1,0 +1,24 @@
+.slides img {
+  width: 80%;
+ 
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 2rem;
+  margin-left: 10%;
+}
+.swper {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-wrapper {
+
+  
+}
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    display: none;
+}

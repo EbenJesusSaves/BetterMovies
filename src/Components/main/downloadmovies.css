@@ -1,0 +1,144 @@
+.backgroundImage {
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+}
+.downloadMovie {
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.backgroundImage img {
+  width: 100%;
+  border-radius: 0 0 30px 30px;
+  opacity: 40%;
+}
+
+.title-1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.2rem;
+  margin: 2rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.movieDetails {
+  display: flex;
+  gap: 4rem;
+}
+
+.genre {
+  color: var(--white);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: solid 1px var(--white);
+  padding: 10px 40px;
+  margin-bottom: 2rem;
+  border-radius: 39px;
+}
+.rating-1 {
+  color: var(--white);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: solid 1px var(--white);
+  padding: 10px 40px;
+  margin-bottom: 2rem;
+  border-radius: 39px;
+}
+.RunTime {
+  color: var(--white);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: solid 1px var(--white);
+  padding: 10px 40px;
+  margin-bottom: 2rem;
+  border-radius: 39px;
+}
+
+.year {
+  color: var(--white);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: solid 1px var(--white);
+  padding: 10px 40px;
+  margin-bottom: 2rem;
+  border-radius: 39px;
+}
+
+.torrents {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.downloadLink {
+  text-decoration: none;
+  color: rgb(208, 224, 255);
+  background-color: rgb(92, 14, 0);
+  padding: 10px 3rem;
+  border-radius: 10px;
+}
+.spanClass {
+  margin-top: 2rem;
+  color: var(--white);
+}
+.trailers {
+  border: solid 5px var(--white);
+  width: 510px;
+  margin-right: 1rem;
+}
+.preview {
+  position: absolute;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.fullDetails {
+  color: var(--white);
+  width: 80%;
+}
+.SubDetails {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+  .SubDetails {
+    padding-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .torrents {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .torrent {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .movieDetails {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .SubDetails {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .torrents {
+    margin: 0;
+  }
+  .fullDetails {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .capture {
+    margin-left: 2rem;
+  }
+  .trailers {
+    display: none;
+  }
+}

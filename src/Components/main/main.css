@@ -1,0 +1,57 @@
+.cards-container {
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.movie {
+  background-color: aliceblue;
+}
+.movie img {
+  border-radius: 15px;
+}
+.movie-card {
+  background-image: url("https://st3.depositphotos.com/9998432/19048/v/600/depositphotos_190484900-stock-illustration-default-placeholder-businessman-half-length.jpg");
+  background-color: white;
+  height: 345px;
+  position: relative;
+  width: 230px;
+  border-radius: 15px;
+}
+.movie-info {
+  padding-top: 230px;
+  height: 345px;
+  background-color: rgba(0, 0, 0, 0.438);
+  position: absolute;
+  bottom: 0%;
+  z-index: 2;
+  box-shadow: var(--box-shadow-lg);
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  border-radius: 15px;
+}
+.movie-info ::hover {
+  display: none;
+}
+.movie {
+  background: transparent;
+}
+
+.title {
+  font-size: medium;
+  font-weight: bolder;
+}
+.comeHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .page-item{
+    display: none;
+  }
+}
