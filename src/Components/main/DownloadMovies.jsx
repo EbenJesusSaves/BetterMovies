@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Navbar } from "../navbar/Navbar";
 import "./downloadmovies.css";
 const DownloadMovies = () => {
   let { id } = useParams();
@@ -22,6 +23,10 @@ const DownloadMovies = () => {
   if (id) {
     return (
       <div>
+        <Navbar 
+        
+        
+        />
         <div className="container-xxl cards-container d-flex  justify-content-center">
           <div className="downloadMovie mb-3 hello">
             <div className="backgroundImage ">
@@ -80,6 +85,7 @@ const DownloadMovies = () => {
                 </div>
               </div>
             </div>
+          
             <div className="preview">
               {" "}
               <div className="trailers ">
@@ -94,22 +100,25 @@ const DownloadMovies = () => {
               </div>{" "}
               <div className="screenshots">
                 <span>
-                  <img 
-                   width={330}
-                   height={200}
-                  
-                  src={dataReturned1.medium_screenshot_image1} alt="" />
+                  <img
+                    width={330}
+                    height={200}
+                    src={dataReturned1.medium_screenshot_image1}
+                    alt=""
+                  />
                 </span>
                 <span>
-                  <img 
-                  
-                  width={330}
-                  height={200}
-                  src={dataReturned1.medium_screenshot_image2} alt="" />
+                  <img
+                    width={330}
+                    height={200}
+                    src={dataReturned1.medium_screenshot_image2}
+                    alt=""
+                  />
                 </span>
               </div>
             </div>
           </div>
+
           {console.log(dataReturned1)}
         </div>
       </div>

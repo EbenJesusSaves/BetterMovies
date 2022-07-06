@@ -1,7 +1,14 @@
 import React, { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import Genry from "../firstAside/Genry";
 import "./navbar.css";
-export const Navbar = ({ setSearchMovie, setPagination, displayPage ,pagination,  setGenry}) => {
+export const Navbar = ({
+  setSearchMovie,
+  setPagination,
+  displayPage,
+  pagination,
+  setGenry,
+}) => {
   const valueRef = useRef(null);
   function changeSate() {
     setSearchMovie(valueRef.current.value);
@@ -38,9 +45,9 @@ export const Navbar = ({ setSearchMovie, setPagination, displayPage ,pagination,
     <>
       <nav class="navbar navbar-expand-lg  navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">
+          <Link class="navbar-brand text-white" to="/">
             University of Graphics
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -55,13 +62,13 @@ export const Navbar = ({ setSearchMovie, setPagination, displayPage ,pagination,
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
+                <Link
                   class="nav-link active text-white"
                   aria-current="page"
-                  href="#"
+                  to='/'
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">
@@ -95,7 +102,7 @@ export const Navbar = ({ setSearchMovie, setPagination, displayPage ,pagination,
         <div className="genres"></div>
       </nav>
       <div className="genres genre-in-nav flex-wrap text-align-center text-white">
-      {genryFrom.map((value, index) => (
+        {genryFrom.map((value, index) => (
           <div key={index}>
             {" "}
             <div className="form-check">
